@@ -1,0 +1,62 @@
+
+  GET|HEAD  / .................................................................................................................................... 
+  POST      _ignition/execute-solution ............................. ignition.executeSolution › Spatie\LaravelIgnition › ExecuteSolutionController
+  GET|HEAD  _ignition/health-check ......................................... ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckController
+  POST      _ignition/update-config ...................................... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigController
+  GET|HEAD  admin .................................................................. aimeos_shop_admin › Aimeos\Shop › AdminController@indexAction
+  GET|HEAD  admin/{site}/jqadm/copy/{resource}/{id} ............................ aimeos_shop_jqadm_copy › Aimeos\Shop › JqadmController@copyAction
+  GET|HEAD  admin/{site}/jqadm/create/{resource} ........................... aimeos_shop_jqadm_create › Aimeos\Shop › JqadmController@createAction
+  POST      admin/{site}/jqadm/delete/{resource}/{id?} ..................... aimeos_shop_jqadm_delete › Aimeos\Shop › JqadmController@deleteAction
+  GET|POST|HEAD admin/{site}/jqadm/export/{resource} ....................... aimeos_shop_jqadm_export › Aimeos\Shop › JqadmController@exportAction
+  GET|HEAD  admin/{site}/jqadm/file/{type} ..................................... aimeos_shop_jqadm_file › Aimeos\Shop › JqadmController@fileAction
+  GET|HEAD  admin/{site}/jqadm/get/{resource}/{id} ............................... aimeos_shop_jqadm_get › Aimeos\Shop › JqadmController@getAction
+  POST      admin/{site}/jqadm/save/{resource} ................................. aimeos_shop_jqadm_save › Aimeos\Shop › JqadmController@saveAction
+  GET|POST|HEAD admin/{site}/jqadm/search/{resource} ....................... aimeos_shop_jqadm_search › Aimeos\Shop › JqadmController@searchAction
+  OPTIONS   admin/{site}/jsonadm/{resource?} ......................... aimeos_shop_jsonadm_options › Aimeos\Shop › JsonadmController@optionsAction
+  DELETE    admin/{site}/jsonadm/{resource}/{id?} ...................... aimeos_shop_jsonadm_delete › Aimeos\Shop › JsonadmController@deleteAction
+  GET|HEAD  admin/{site}/jsonadm/{resource}/{id?} ............................ aimeos_shop_jsonadm_get › Aimeos\Shop › JsonadmController@getAction
+  PATCH     admin/{site}/jsonadm/{resource}/{id?} ........................ aimeos_shop_jsonadm_patch › Aimeos\Shop › JsonadmController@patchAction
+  POST      admin/{site}/jsonadm/{resource}/{id?} .......................... aimeos_shop_jsonadm_post › Aimeos\Shop › JsonadmController@postAction
+  PUT       admin/{site}/jsonadm/{resource}/{id?} ............................ aimeos_shop_jsonadm_put › Aimeos\Shop › JsonadmController@putAction
+  GET|HEAD  api/user ............................................................................................................................. 
+  GET|HEAD  confirm-password .......................................................... password.confirm › Auth\ConfirmablePasswordController@show
+  POST      confirm-password ............................................................................ Auth\ConfirmablePasswordController@store
+  GET|HEAD  dashboard .................................................................................................................. dashboard
+  POST      email/verification-notification ............................... verification.send › Auth\EmailVerificationNotificationController@store
+  GET|HEAD  forgot-password ........................................................... password.request › Auth\PasswordResetLinkController@create
+  POST      forgot-password .............................................................. password.email › Auth\PasswordResetLinkController@store
+  GET|OPTIONS|HEAD jsonapi/{resource?} ............................... aimeos_shop_jsonapi_options › Aimeos\Shop › JsonapiController@optionsAction
+  DELETE    jsonapi/{resource} ......................................... aimeos_shop_jsonapi_delete › Aimeos\Shop › JsonapiController@deleteAction
+  GET|HEAD  jsonapi/{resource} ............................................... aimeos_shop_jsonapi_get › Aimeos\Shop › JsonapiController@getAction
+  PATCH     jsonapi/{resource} ........................................... aimeos_shop_jsonapi_patch › Aimeos\Shop › JsonapiController@patchAction
+  POST      jsonapi/{resource} ............................................. aimeos_shop_jsonapi_post › Aimeos\Shop › JsonapiController@postAction
+  PUT       jsonapi/{resource} ............................................... aimeos_shop_jsonapi_put › Aimeos\Shop › JsonapiController@putAction
+  GET|HEAD  login ............................................................................. login › Auth\AuthenticatedSessionController@create
+  POST      login ...................................................................................... Auth\AuthenticatedSessionController@store
+  POST      logout .......................................................................... logout › Auth\AuthenticatedSessionController@destroy
+  GET|HEAD  privacy ............................................................. aimeos_shop_privacy › Aimeos\Shop › PageController@privacyAction
+  GET|POST|HEAD profile ........................................................ aimeos_shop_account › Aimeos\Shop › AccountController@indexAction
+  GET|POST|HEAD profile/download/{dl_id} ........................... aimeos_shop_account_download › Aimeos\Shop › AccountController@downloadAction
+  GET|POST|HEAD profile/favorite/{fav_action?}/{fav_id?}/{d_name?}/{d_pos?} aimeos_shop_account_favorite › Aimeos\Shop › AccountController@indexA…
+  GET|POST|HEAD profile/watch/{wat_action?}/{wat_id?}/{d_name?}/{d_pos?} . aimeos_shop_account_watch › Aimeos\Shop › AccountController@indexAction
+  GET|HEAD  register ............................................................................. register › Auth\RegisteredUserController@create
+  POST      register ......................................................................................... Auth\RegisteredUserController@store
+  POST      reset-password .................................................................... password.update › Auth\NewPasswordController@store
+  GET|HEAD  reset-password/{token} ............................................................ password.reset › Auth\NewPasswordController@create
+  GET|POST|HEAD s/{s_name}/{f_supid} ........................................ aimeos_shop_supplier › Aimeos\Shop › SupplierController@detailAction
+  GET|HEAD  sanctum/csrf-cookie ...................................................................... Laravel\Sanctum › CsrfCookieController@show
+  GET|POST|HEAD shop ............................................................... aimeos_shop_list › Aimeos\Shop › CatalogController@listAction
+  GET|POST|HEAD shop/basket ...................................................... aimeos_shop_basket › Aimeos\Shop › BasketController@indexAction
+  GET|POST|HEAD shop/checkout/{c_step?} ...................................... aimeos_shop_checkout › Aimeos\Shop › CheckoutController@indexAction
+  GET|POST|HEAD shop/confirm/{code?} ........................................ aimeos_shop_confirm › Aimeos\Shop › CheckoutController@confirmAction
+  GET|POST|HEAD shop/count ....................................................... aimeos_shop_count › Aimeos\Shop › CatalogController@countAction
+  GET|POST|HEAD shop/pin .............................................. aimeos_shop_session_pinned › Aimeos\Shop › CatalogController@sessionAction
+  GET|POST|HEAD shop/stock ....................................................... aimeos_shop_stock › Aimeos\Shop › CatalogController@stockAction
+  GET|POST|HEAD shop/suggest ................................................. aimeos_shop_suggest › Aimeos\Shop › CatalogController@suggestAction
+  GET|POST|HEAD shop/{d_name}/{d_pos?}/{d_prodid?} ............................. aimeos_shop_detail › Aimeos\Shop › CatalogController@detailAction
+  GET|POST|HEAD shop/{f_name}~{f_catid} ............................................ aimeos_shop_tree › Aimeos\Shop › CatalogController@treeAction
+  GET|HEAD  terms ................................................................... aimeos_shop_terms › Aimeos\Shop › PageController@termsAction
+  GET|POST|HEAD update ........................................................ aimeos_shop_update › Aimeos\Shop › CheckoutController@updateAction
+  GET|HEAD  verify-email ................................................... verification.notice › Auth\EmailVerificationPromptController@__invoke
+  GET|HEAD  verify-email/{id}/{hash} ................................................... verification.verify › Auth\VerifyEmailController@__invoke
+
